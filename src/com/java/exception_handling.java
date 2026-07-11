@@ -4,7 +4,7 @@ public class exception_handling {
     public static void main(String[] args) {
         int [] marks = {12,14,15};
         try{
-            System.out.println(marks[5]);
+            System.out.println(marks[2]);
         }catch(Exception exception){
 
         }
