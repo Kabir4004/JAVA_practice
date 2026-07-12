@@ -4,23 +4,21 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
+        Teacher teacher1 = new Teacher();
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter your name:");
         String name = input.next();
 
         System.out.println("Enter your age:");
-        int age = input.nextInt();  // Now reads as int
+        String age = input.next();
 
-        System.out.println("Enter your phone number:");
+        System.out.println("Enter your phone_number:");
         String phone_number = input.next();
 
-        // Create teacher object with constructor
-        Teacher teacher1 = new Teacher(name, age, phone_number);
+        teacher1.setData(name, age, phone_number);
+        teacher1.display();  // No arguments needed now
 
-        // Display the information
-        teacher1.display();
-
-        input.close();  // Good practice to close Scanner
+        input.close();
     }
 }
