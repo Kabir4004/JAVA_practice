@@ -2,10 +2,10 @@ package oop;
 
 public class Teacher {
     String name;
-    String age;  // Keeping as String if you prefer
+    int age;  // Keeping as String if you prefer
     String phone_number;
 
-    void setData(String name, String age, String phone_number) {
+    Teacher(String name, int age, String phone_number) {
         this.name = name;
         this.age = age;
         this.phone_number = phone_number;
