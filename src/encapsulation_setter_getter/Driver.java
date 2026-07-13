@@ -18,5 +18,9 @@ public class Driver {
         return age;
     }
 
-
+    public void display(String name, int age){
+        System.out.println("Name: "+this.getName());
+        System.out.println("Age: "+this.getAge());
+        System.out.println("university:"+universityName);
+    }
 }
