@@ -5,7 +5,10 @@ public class Test {
         User u1;
 
         u1 = new Kabir();
-
         u1.sendMessage();
+        u1 = new Abir();
+        u1.sendMessage();
+
+
     }
 }
