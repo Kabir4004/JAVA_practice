@@ -3,10 +3,10 @@ package encapsulation_setter_getter;
 public class Driver {
     private String name;
     private int age;
-    public String universityName="any name";
+    public String universityName;
 
     public void setName(String name){
-        this.name =name;
+        this.name=name;
     }
     public String getName(){
         return name;
@@ -17,10 +17,16 @@ public class Driver {
     public int getAge(){
         return age;
     }
-
-    public void display(String name, int age){
-        System.out.println("Name: "+this.getName());
-        System.out.println("Age: "+this.getAge());
-        System.out.println("university:"+universityName);
+    public void setUniversityName(String universityName){
+        this.universityName=universityName;
     }
+    public String getUniversityName(){
+        return universityName;
+    }
+    public void display(){
+        System.out.println("name: "+getName());
+        System.out.println("age: "+getAge());
+        System.out.println("University name: "+getUniversityName());
+    }
+
 }
